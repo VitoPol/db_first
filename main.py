@@ -39,5 +39,5 @@ with open("./new_datasets/authors.csv", "w", newline='', encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
 
     writer.writeheader()
-    for i in range(len(addresses)):
-        writer.writerow({"Id": i+1, "author": addresses[i]})
+    for i in range(len(authors)):
+        writer.writerow({"Id": i+1, "author": authors[i]})
